@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portifolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -13,11 +14,15 @@
 
     <ul>
 
-      <li><a href="#" title="Home">Home</a></li>
-      <li><a href="#" title="Quem Sou">Quem Sou</a></li>
-      <li><a href="#" title="Serviços">Serviços</a></li>
-      <li><a href="#" title="Fale Conosco">Fale Conosco</a></li>
-
+      <ul>
+                
+        <li><a href="#home" class="scrollSuave">Home</a></li>
+        <li><a href="#sobre" class="scrollSuave">Sobre</a></li>
+        <li><a href="#formacao" class="scrollSuave">Formação Acadêmica</a></li>
+        <li><a href="#contato" class="scrollSuave">Contato</a></li>
+        
+               
+    </ul>
     </ul>
 
   </nav>
@@ -33,7 +38,7 @@
   </div>
   <hr>
   <div>
-
+    <section id="contato"></section>
     <a href="https://www.facebook.com/pedra02?mibextid=ZbWKwL" target=“_blank”><img class="face" src="image/face.svg"
         alt="Logo marca do facebook"></a>
 
@@ -48,6 +53,7 @@
   </div>
 
   <div class="container">
+    <section id="sobre"></section>
     <h2>Quem Sou</h2>
 
     <hr class="qs">
@@ -69,6 +75,8 @@
 
     <hr class="fa">
 
+    <section id="formacao"></section>
+
     <p class="formacao">Concluí o ensino médio na escola estadual "9 de julho" na cidade de Taquaritinga. Ingressei na
       Faculdade Santa
       Giulia de Taquaritinga para cursar Nutrição, onde me formei em 2007.
@@ -79,26 +87,21 @@
     </p>
 
   </div>
+  
+  <footer>
+    <div class="rod"></div>
+  </footer>
+  
 
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
       <div class="vw-plugin-top-wrapper"></div>
-    </div>
   </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget({
-      rootPah: '/app',
-      personalization: 'https://vlibras.gov.br/config/default_logo.json',
-      opacity: 0.5,
-      position: 'L',
-      avatar: 'random',
-    });
-  </script>
-  <footer>
 
-  </footer>
+ 
+  
 </body>
-
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script src="script.js"></script>
 </html>

@@ -202,3 +202,10 @@ h3{
   top: 120%;
   left: -35%;
 }
+.rod{
+width: 100%;
+height: 20%;
+background-color: lightgray;
+position: absolute;
+top: 125%;
+}
