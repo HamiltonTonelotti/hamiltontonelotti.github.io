@@ -205,7 +205,61 @@ h3{
 .rod{
 width: 100%;
 height: 20%;
-background-color: lightgray;
+background:#fff; 
+box-shadow: 1px 0px 1.2px 0px #f58686;
 position: absolute;
 top: 125%;
 }
+.face2 {
+  width: 2%;
+  position: absolute;
+  top: 45%;
+  left: 75%;
+  background: none;
+}
+
+.insta2 {
+  width: 2%;
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  background: none;
+}
+
+.zap2 {
+  width: 2%;
+  position: absolute;
+  top: 45%;
+  left: 85%;
+  background: none;
+}
+
+.git2 {
+  width: 2%;
+  position: absolute;
+  top: 45%;
+  left: 90%;
+  background: none;
+}
+.contato{
+  position: absolute;
+  top: 25%;
+  left: 75%;
+  font-family: metropolis;
+  font-size: 20px;
+}
+.direitos{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  font-family: metropolis;
+  font-size: 20px;
+}
+.desen{
+  position: absolute;
+  top: 65%;
+  left: 42%;
+  font-family: metropolis;
+  font-size: 20px;
+}
+
