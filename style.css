@@ -1,39 +1,46 @@
-@font-face {
-  font-family: playfair;
-  src: url(font/PlayfairDisplay-Regular.ttf);
-  font-family: metropolis;
-  src: url(font/metropolis.regular.otf);
-  font-family: creamy;
-  src: url(font/Creamy\ Coffee\ Demo\ Regular.ttf);
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.pai {
+    display: grid;
+    grid-template-areas:
+    "cab cab cab cab"
+    "menu cont cont cont"
+    "rod rod rod rod ";
+grid-template-rows:  80px 160vh 60px ;
+}
+    
 
+.item {
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-}
+.cab {grid-area: cab;}
+.menu {grid-area: menu;}
+.cont {grid-area: cont;}
+.rod {grid-area: rod;}
 
-.menu ul {
-  
+ul {
 list-style:none;
 width:100%;
 float:left;
 padding:0px;
 gap: 10px;
-background:#fff; 
-box-shadow: 1px 0px 1.2px 0px #e3e3e3;
+
 }
 
-.menu ul li a {
-
+ul li a {
 text-decoration:none;   
-color:#5a5a5a; 
-font-family: 'metropolis';
+color:#020202; 
 font-size: 18px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.menu ul li {
-
+ul li {
 position:relative;
 display: block;
 width: 100%;
@@ -45,7 +52,7 @@ border-color:transparent;
 border-style:solid;
 }
 
-.menu ul li:hover a {
+ul li:hover a {
 
 color: #007cff;
 border-width: 0px 0px 3px 0px;    
@@ -53,213 +60,213 @@ border-color:#007cff;
 border-style:solid;
 
 }
-
-/*768PX BREAKPOINT*/
 @media (min-width:48em){
 
-.menu ul li { display:block; width:auto; margin: 8px 20px; padding: 10px;}
+ul li { display:block; width:auto; margin: 8px 20px; padding: 10px;}
 
 } 
 
 h1 {
-  position: absolute;
-  top: 20%;
-  left: 40%;
-  font-family: playfair;
-  font-size: 60px;
-
-}
-
-.dados {
-  font-family: metropolis;
-  font-size: 25px;
-  position: absolute;
-  top: 37%;
-  left: 42%;
-
-}
-
-img {
-  position: absolute;
-  width: 18%;
-  border-radius: 50%;
-  top: 25%;
-  left: 20%;
-  background: linear-gradient(to bottom, #ff512f, #f09819, #ffffff);
-}
-
-.face {
-  width: 4%;
-  position: absolute;
-  top: 55%;
-  left: 41%;
-  background: none;
-}
-
-.insta {
-  width: 4%;
-  position: absolute;
-  top: 55%;
-  left: 48%;
-  background: none;
-}
-
-.zap {
-  width: 4%;
-  position: absolute;
-  top: 55%;
-  left: 55%;
-  background: none;
-}
-
-.git {
-  width: 4%;
-  position: absolute;
-  top: 55%;
-  left: 62%;
-  background: none;
-}
-
-hr {
-  width: 8%;
-  height: 5px;
-  border: 1px solid #ffc000;
-  border-radius: 5px;
-  position: absolute;
-  top: 31%;
-  left: 40%;
-  background: #ffc000;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    font-family: playfair;
+    font-size: 60px;
   
-}
-.container {
-  width: 400px;
-  height: 300px;
+  }
+  
+  .dados  {
+    width: 400px;
+    height: 600px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 37%;
+    left: 47%;
+  
+  }
+  
+  img {
+    position: absolute;
+    width: 15%;
+    border-radius: 50%;
+    top: 14%;
+    left: 27%;
+    background: linear-gradient(to bottom, #ff512f, #f09819, #ffffff);
+  }
+  
+  .face {
+    width: 4%;
+    position: absolute;
+    top: 60%;
+    left: 47%;
+    background: none;
+  }
+  
+  .insta {
+    width: 4%;
+    position: absolute;
+    top: 60%;
+    left: 57%;
+    background: none;
+  }
+  
+  .zap {
+    width: 4%;
+    position: absolute;
+    top: 60%;
+    left: 67%;
+    background: none;
+  }
+  
+  .git {
+    width: 4%;
+    position: absolute;
+    top: 60%;
+    left: 77%;
+    background: none;
+  }
+  
+  hr {
+    width: 8%;
+    height: 5px;
+    border: 1px solid #ffc000;
+    border-radius: 5px;
+    position: absolute;
+    top: 31%;
+    left: 45%;
+    background: #ffc000;
+    
+  }
+  .casal{
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    top:10%;
+    left: 110%;
+    background: #ffffff;    
+    border: 1px solid #ffc000;
+    border-radius: 5px;
+    transform: rotate(10deg);
+  }
+  .jiu{
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    top: 15%;
+    left: -95%;
+    background: #ffffff;    
+    border: 1px solid #ffc000;
+    border-radius: 5px;
+    transform: rotate(-10deg);
+  
+  }
+  .container {
+    width: 60vh;
+    height: 50vh;
+    position: absolute;
+    top: 80%;
+    left: 55%;
+  }
+  h2{
+    position: absolute;
+    top: -10%;
+    left: -90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+  }
+  .qs{
+    position: absolute;
+    top: 6%;
+    left: -90%;
+  }
+  .resPessoal, .formacao{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 15%;
+    left: -35%;
+    text-align: justify;
+    line-height: 20px;
+    text-indent: 30px;
+  }
+ 
+  h3{
+    position: absolute;
+    top: 100%;
+    left: -93%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+  }
+  
+  .fa{
+    position: absolute;
+    top: 127%;
+    left: -93%;
+  }
+  .formacao{
+    position: absolute;
+    top: 135%;
+    left: -35%;
+  }
+  .rodape{
+  width: 80%;
+  height: 20%;
   position: absolute;
-  top: 70%;
-  left: 50%;
-}
-h2{
-  position: absolute;
-  top: -10%;
-  left: -90%;
-  font-family: metropolis;
-  font-size: 30px;
-}
-.qs{
-  position: absolute;
-  top: 3%;
-  left: -90%;
-}
-.resPessoal, .formacao{
-  font-family: metropolis;
-  font-size: 18px;
-  position: absolute;
-  top: 1%;
-  left: -35%;
-  text-align: justify;
-  line-height: 20px;
-  text-indent: 30px;
-}
-.casal{
-  position: absolute;
-  width: 50%;
-  height: 70%;
-  top:-10%;
-  left: 120%;
-  background: #ffffff;    
-  border: 1px solid #ffc000;
-  border-radius: 5px;
-  transform: rotate(10deg);
-}
-.jiu{
-  position: absolute;
-  width: 50%;
-  height: 70%;
-  top: 15%;
-  left: -100%;
-  background: #ffffff;    
-  border: 1px solid #ffc000;
-  border-radius: 5px;
-  transform: rotate(-5deg);
+  top: 165%;
+  }
+  .face2 {
+    width: 2%;
+    position: absolute;
+    top: 58%;
+    left: 95%;
+    background: none;
+  }
+  
+  .insta2 {
+    width: 2%;
+    position: absolute;
+    top: 58%;
+    left: 100%;
+    background: none;
+  }
+  
+  .zap2 {
+    width: 2%;
+    position: absolute;
+    top: 58%;
+    left: 105%;
+    background: none;
+  }
+  
+  .git2 {
+    width: 2%;
+    position: absolute;
+    top: 58%;
+    left: 110%;
+    background: none;
+  }
+  .contato{
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+  }
+  .direitos{
+    position: absolute;
+    top: 60%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+  }
+  .desen{
+    position: absolute;
+    top: 60%;
+    left: 42%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+  }
+  
 
-}
 
-h3{
-  position: absolute;
-  top: 100%;
-  left: -93%;
-  font-family: metropolis;
-  font-size: 30px;
-}
-
-.fa{
-  position: absolute;
-  top: 125%;
-  left: -93%;
-}
-.formacao{
-  position: absolute;
-  top: 120%;
-  left: -35%;
-}
-.rod{
-width: 100%;
-height: 20%;
-background:#fff; 
-box-shadow: 1px 0px 1.2px 0px #f58686;
-position: absolute;
-top: 125%;
-}
-.face2 {
-  width: 2%;
-  position: absolute;
-  top: 45%;
-  left: 75%;
-  background: none;
-}
-
-.insta2 {
-  width: 2%;
-  position: absolute;
-  top: 45%;
-  left: 80%;
-  background: none;
-}
-
-.zap2 {
-  width: 2%;
-  position: absolute;
-  top: 45%;
-  left: 85%;
-  background: none;
-}
-
-.git2 {
-  width: 2%;
-  position: absolute;
-  top: 45%;
-  left: 90%;
-  background: none;
-}
-.contato{
-  position: absolute;
-  top: 25%;
-  left: 75%;
-  font-family: metropolis;
-  font-size: 20px;
-}
-.direitos{
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  font-family: metropolis;
-  font-size: 20px;
-}
-.desen{
-  position: absolute;
-  top: 65%;
-  left: 42%;
-  font-family: metropolis;
-  font-size: 20px;
-}
 

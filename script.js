@@ -1,3 +1,13 @@
+
+document.addEventListener('DOMContentLoaded', function () {
+    const chek = document.getElementById('chek');
+
+    chek.addEventListener('change', function () {
+        console.log('Checkbox state changed');
+        document.body.classList.toggle('dark');
+    });
+});
+
 new window.VLibras.Widget({
     rootPah: '/app',
     personalization: 'https://vlibras.gov.br/config/default_logo.json',
@@ -14,3 +24,5 @@ var $doc = $('html, body');
         }, 500);        
         return false;
     });
+
+
