@@ -66,11 +66,41 @@ border-style:solid;
 ul li { display:block; width:auto; margin: 8px 20px; padding: 10px;}
 
 } 
+.zoom-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-left: 20px;
+}
+
+.zoom-buttons button {
+  cursor: pointer;
+  display: inline-block;
+  background-color:  lightgrey;
+  color: #000000;
+  font-size: 24px;
+  padding: 5px 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 5.5px;
+ 
+}
+.zoom-buttons button:hover {
+  background-color: gray;
+  color: #000;
+}
+
+#zoomOutBtn{
+  padding: 5px 15px;
+
+}
+
 
 h1 {
     position: absolute;
     top: 20%;
-    left: 45%;
+    left: 35%;
     font-family: playfair;
     font-size: 60px;
   
