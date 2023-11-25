@@ -8,6 +8,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const zoomInBtn = document.getElementById('zoomInBtn');
+    const zoomOutBtn = document.getElementById('zoomOutBtn');
+    const zoomContainer = document.querySelector('.zoom-container');
+
+    let currentScale = 2;
+
+    zoomInBtn.addEventListener('click', function () {
+        currentScale += 0.2;
+        applyZoom();
+    });
+
+    zoomOutBtn.addEventListener('click', function () {
+        currentScale -= 0.2;
+        applyZoom();
+    });
+
+    function applyZoom() {
+        zoomContainer.style.transform = `scale(${currentScale})`;
+    }
+});
+
+
 new window.VLibras.Widget({
     rootPah: '/app',
     personalization: 'https://vlibras.gov.br/config/default_logo.json',
